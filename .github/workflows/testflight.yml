@@ -153,7 +153,7 @@ jobs:
             echo "Archive recipe failed. Encrypted diagnostics are attached as an artifact."
             exit "$code"
           fi
-          echo "Archive recipe completed: XCTest passed before archive and upload."
+          echo "Archive recipe completed. Verification details are in the release summary."
 
       - name: Upload upload-acceptance marker
         if: ${{ always() }}
